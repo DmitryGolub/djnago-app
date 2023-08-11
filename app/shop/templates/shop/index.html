@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Заказать мягкую игрушку авокадо. Доставка по всей Россси. Забавная мягкая и пушистая игрушка в форме Авокадо станет отличным подарком для малыша.">
+    <title>МЯГКАЯ ИГРУШКА АВОКАДО</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="{% static 'shop/images/icon.svg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'shop/css/swiper.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <h2 class="logo">Игрушка авокадо</h2>
+            <nav class="navbar">
+                <a class="navbar-link" href="#about" style="--i:1;">О товаре</a>
+                <a class="navbar-link" href="#reviews" style="--i:2;">Отзывы</a>
+                <a class="navbar-link" href="#order" style="--i:3;">Заказать</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="home">
+    <div class="container">
+        <div class="home-inner">
+            <div class="home_content">
+                <h1 class="home_title">МЯГКАЯ ИГРУШКА АВОКАДО</h1>
+                <p class="home_text">Забавная мягкая и пушистая игрушка в форме Авокадо станет отличным подарком для малыша</p>
+                <div class="home_share">
+                    <a href="https://t.me/share/url?url=https://dmitrygolub.pythonanywhere.com/" class="home_share-item" style="--i:5;"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?text=https://dmitrygolub.pythonanywhere.com/" class="home_share-item" style="--i:3;"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://vk.com/share.php?url=https://dmitrygolub.pythonanywhere.com/" class="home_share-item" style="--i:1;"><i class='bx bxl-vk' ></i></a>
+                </div>
+                <a class="home_link" href="#order">Заказать</a>
+            </div>
+            <div class="home_img">
+                <img src="{% static 'shop/images/home-img.png' %}" alt="тут должна была быть картинка с авокадо">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="about_title">О товаре</h2>
+        <div class="about-inner">
+            <div class="about_content">
+                <h3 class="about_subtitle">Игрушка авокадо</h3>
+                <p class="about_text">Мягкое, милое, нежное плюшевое авокадо можно использовать в качестве подушки, украшения для дивана или же просто как игрушку для ребёнка. Игрушка очень приятна на ощупь. Этот тропический плюшевый фрукт быстро станет вашим новым любимым другом! Он идеально подходит для обнимашек и вы не захотите его выпускать из своих объятий!</p>
+                <h3 class="about_subtitle">Купить игрушку авокадо</h3>
+                <ul class="about_list_price">
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                </ul>
+            </div>
+            <div class="about_swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="about_swiper-wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="about_swiper-slide swiper-slide"><img src="{% static 'shop/images/slider1.jpg' %}" alt=""></div>
+                    <div class="about_swiper-slide swiper-slide"><img src="{% static 'shop/images/slider2.jpg' %}" alt=""></div>
+                    <div class="about_swiper-slide swiper-slide"><img src="{% static 'shop/images/slider3.jpg' %}" alt=""></div>
+                    <div class="about_swiper-slide swiper-slide"><img src="{% static 'shop/images/slider4.jpg' %}" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="about_swiper-pagination swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="about_swiper-button-prev swiper-button-prev"></div>
+                <div class="about_swiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="reviews-inner">
+            <h2 class="reviews_title">Отзывы</h2>
+            <div class="reviews_swiper swiper">
+                <div class="reviews_swiper-wrapper swiper-wrapper">
+                    <div class="reviews_swiper-slide swiper-slide">
+                        <div class="reviews_slide-inner">
+                            <div class="reviews_swiper-slide-logo" style="background-image: url({% static 'shop/images/reviews/3.jpeg' %})"></div>
+                            <p class="reviews_swiper-slide-author">Попова Софья</p>
+                            <p class="reviews_swiper-slide-text">На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
+                            Использовать как подушку-не советую, жестковат и толстоват))
+                            Но на ощупь очень приятный. Качество хорошее. По крайней мере, на первый взгляд. Форма ровная, прошит хорошо, нитки не торчат.
+                            Вот такой позитивный «фрукт» появился у нас в доме)
+                            Игрушка хорошая, ребёнок очень доволен и это главное)!
+                            Спасибо)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews_swiper-slide swiper-slide">
+                        <div class="reviews_slide-inner">
+                            <div class="reviews_swiper-slide-logo" style="background-image: url({% static 'shop/images/reviews/2.jpeg' %})"></div>
+                            <p class="reviews_swiper-slide-author">Иванова Ольга</p>
+                            <p class="reviews_swiper-slide-text">
+                                Мягкая игрушка "Авокадо" была презентована моему старшему сыну. У ребенка она стала любимой игрушкой, с которой он даже спит иногда !)))
+Игрушка качественная, ничего, за почти год пользования, не вылезло и не порвалось. И да, повторюсь это любимая плюшевая игрушка ребенка, ведь это лучше всяких мишек/заек!
+Бывают эти авокадо и больших размеров.
+Конечно рекомендую к покупке!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews_swiper-slide swiper-slide">
+                        <div class="reviews_slide-inner">
+                            <div class="reviews_swiper-slide-logo" style="background-image: url({% static 'shop/images/reviews/1.jpeg' %})"></div>
+                            <p class="reviews_swiper-slide-author">Гуляева Ева</p>
+                            <p class="reviews_swiper-slide-text">Или мне так кажется, или действительно все вокруг заполонили игрушки: авокадо- родители и авокадо-ребенки.
+Люблю мягкие игрушки , поэтому, когда в первый раз увидела игрушку авокадо, то она мне приглянулась, стала думать, как купить и какую - есть разные типоразмеры: и большие, и средние, и поменьше. Взяла размером с подушку - люб читать, смотреть тв, мечтать полулежа: голова на подушке...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="reviews_swiper-pagination swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="reviews_swiper-button-prev swiper-button-prev"></div>
+                <div class="reviews_swiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="order" id="order">
+    <div class="container">
+        <h2 class="order_title">
+            Заказать
+        </h2>
+        <div class="order-inner">
+            <ul class="order_description">
+                <li class="order_description-item">
+                    Доставляем по всей России
+                </li>
+                <li class="order_description-item">
+                    Доставка осуществляется почтой России
+                </li>
+                <li class="order_description-item">
+                    После того как оставите заявку, ждите звонка в ближайшее время
+                </li>
+            </ul>
+            <form method="post" class="order_form">
+                {% csrf_token %}
+                <input class="order_form-name" type="text" placeholder="Имя" name="name">
+                <input type="phone" class="order_form-number" placeholder="Номер телефона" name="phone">
+                <button type="submit" class="order_form-button">Заказть</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    © 2023 Копирование информации только с разрешения правообладателя.
+</footer>
+
+<script src="{% static 'shop/js/swiper.min.js' %}"></script>
+<script src="{% static 'shop/js/scrollreveal.js' %}"></script>
+<script>
+    const about_swiper = new Swiper('.about_swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        // loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.about_swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.about_swiper-button-next',
+          prevEl: '.about_swiper-button-prev',
+        },
+      });
+
+      const reviews_swiper = new Swiper('.reviews_swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.reviews_swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.reviews_swiper-button-next',
+          prevEl: '.reviews_swiper-button-prev',
+        },
+      });
+
+      //=== animation
+//      ScrollReveal({
+//        distance: '100px',
+//        duration: 2000,
+//        delay: 200
+//      })
+//
+//      ScrollReveal().reveal('.about_title, .reviews_swiper-button-next, .reviews_swiper-button-prev, .reviews_title, .order_title', {origin: 'top'});
+//      ScrollReveal().reveal('.about_subtitle, .order_description', {origin: 'left'});
+//     ScrollReveal().reveal('.about_swiper, .about_text, .order_form', {origin: 'right'});
+//      ScrollReveal().reveal('.about_content', {origin: 'bottom'});
+</script>
+</body>
+</html>
