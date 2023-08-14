@@ -12,7 +12,8 @@ def index(request):
                 'name': form.cleaned_data['name'],
                 'phone': form.cleaned_data['phone'],
             }
-            send_mail("Новая заявка!", f"{data['name']} - {data['phone']}", "dmitrygolub23@yandex.ru", ["dmitrygolub23@yandex.ru"], fail_silently=False)
+            sender = 'gosest4@gmail.com'
+            send_mail("Новая заявка!", f"{data['name']} - {data['phone']}", sender, [sender], fail_silently=False)
 
         return render(request, 'shop/index.html', {'form': form})
     return render(request, 'shop/index.html', {'form': form})
